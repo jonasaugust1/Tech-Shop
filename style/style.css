@@ -8,7 +8,7 @@ body{
     background: #ffffff;
     display: flex;
     align-items: center;
-    box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo{
@@ -29,10 +29,24 @@ body{
 
 li{
     list-style: none;
+    background-color: #ffffff;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+li:hover{
+    background-color: #4c6ef5;
 }
 
 a{
     text-decoration: none;
+    color: black;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+a:hover{
+    color: #ffffff;
 }
 
 li:last-of-type {
@@ -47,6 +61,7 @@ li:last-of-type {
     border-radius: 5px;
     border: none;
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
 }
 
 .menu-link-button:hover{
@@ -58,31 +73,28 @@ li:last-of-type {
     transform: translateY(4px);
   }
 
-.product-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     margin-top: 20px;
+    width: 100%;
     background-color: #fff;
+    gap: 20px;
 }
 
 .card{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    width: 25%;
+    width: 20%;
     height: 25%;
+    border: 5px solid black;
+    margin-top: 20px;
 }
 
 img{
-    width: 100%;
+    width: 80%;
 }
 .card h3{
     font-size: 15px;
@@ -102,4 +114,5 @@ img{
     border: none;
     padding: 5px;
     color: #fff;
+    margin-bottom: 10px;
 }
